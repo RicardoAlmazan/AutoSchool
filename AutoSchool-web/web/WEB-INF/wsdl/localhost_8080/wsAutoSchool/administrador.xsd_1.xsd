@@ -1,0 +1,146 @@
+<?xml version='1.0' encoding='UTF-8'?><!-- Published by JAX-WS RI (http://jax-ws.java.net). RI's version is Metro/2.3.2-b608 (trunk-7979; 2015-01-21T12:50:19+0000) JAXWS-RI/2.2.11-b150120.1832 JAXWS-API/2.2.12 JAXB-RI/2.2.12-b141219.1637 JAXB-API/2.2.13-b141020.1521 svn-revision#unknown. --><xs:schema xmlns:tns="http://administrador/" xmlns:xs="http://www.w3.org/2001/XMLSchema" version="1.0" targetNamespace="http://administrador/">
+
+<xs:element name="buscarUsr" type="tns:buscarUsr"/>
+
+<xs:element name="buscarUsrResponse" type="tns:buscarUsrResponse"/>
+
+<xs:element name="consultaEquipos" type="tns:consultaEquipos"/>
+
+<xs:element name="consultaEquiposResponse" type="tns:consultaEquiposResponse"/>
+
+<xs:element name="getApeMaterno" type="tns:getApeMaterno"/>
+
+<xs:element name="getApeMaternoResponse" type="tns:getApeMaternoResponse"/>
+
+<xs:element name="getApePaterno" type="tns:getApePaterno"/>
+
+<xs:element name="getApePaternoResponse" type="tns:getApePaternoResponse"/>
+
+<xs:element name="getGrupo" type="tns:getGrupo"/>
+
+<xs:element name="getGrupoResponse" type="tns:getGrupoResponse"/>
+
+<xs:element name="getIdUsr" type="tns:getIdUsr"/>
+
+<xs:element name="getIdUsrResponse" type="tns:getIdUsrResponse"/>
+
+<xs:element name="getNombre" type="tns:getNombre"/>
+
+<xs:element name="getNombreResponse" type="tns:getNombreResponse"/>
+
+<xs:element name="getTipoUsr" type="tns:getTipoUsr"/>
+
+<xs:element name="getTipoUsrResponse" type="tns:getTipoUsrResponse"/>
+
+<xs:element name="getTodosLosDatosAlumno" type="tns:getTodosLosDatosAlumno"/>
+
+<xs:element name="getTodosLosDatosAlumnoResponse" type="tns:getTodosLosDatosAlumnoResponse"/>
+
+<xs:element name="getUsr" type="tns:getUsr"/>
+
+<xs:element name="getUsrResponse" type="tns:getUsrResponse"/>
+
+<xs:complexType name="getApeMaterno">
+<xs:sequence/>
+</xs:complexType>
+
+<xs:complexType name="getApeMaternoResponse">
+<xs:sequence>
+<xs:element name="return" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="getTodosLosDatosAlumno">
+<xs:sequence>
+<xs:element name="usr" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="getTodosLosDatosAlumnoResponse">
+<xs:sequence>
+<xs:element name="return" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="getGrupo">
+<xs:sequence/>
+</xs:complexType>
+
+<xs:complexType name="getGrupoResponse">
+<xs:sequence>
+<xs:element name="return" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="getTipoUsr">
+<xs:sequence/>
+</xs:complexType>
+
+<xs:complexType name="getTipoUsrResponse">
+<xs:sequence>
+<xs:element name="return" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="buscarUsr">
+<xs:sequence>
+<xs:element name="usr" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="buscarUsrResponse">
+<xs:sequence>
+<xs:element name="return" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="getNombre">
+<xs:sequence/>
+</xs:complexType>
+
+<xs:complexType name="getNombreResponse">
+<xs:sequence>
+<xs:element name="return" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="getUsr">
+<xs:sequence/>
+</xs:complexType>
+
+<xs:complexType name="getUsrResponse">
+<xs:sequence>
+<xs:element name="return" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="consultaEquipos">
+<xs:sequence/>
+</xs:complexType>
+
+<xs:complexType name="consultaEquiposResponse">
+<xs:sequence>
+<xs:element name="return" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="getIdUsr">
+<xs:sequence/>
+</xs:complexType>
+
+<xs:complexType name="getIdUsrResponse">
+<xs:sequence>
+<xs:element name="return" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="getApePaterno">
+<xs:sequence/>
+</xs:complexType>
+
+<xs:complexType name="getApePaternoResponse">
+<xs:sequence>
+<xs:element name="return" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+</xs:schema>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<catalog xmlns="urn:oasis:names:tc:entity:xmlns:xml:catalog" prefer="system">
+    <system systemId="http://localhost:8080/wsAutoSchool/registro?wsdl" uri="src/conf/xml-resources/web-service-references/registro/wsdl/localhost_8080/wsAutoSchool/registro.wsdl"/>
+    <system systemId="http://localhost:8080/wsAutoSchool/registro?xsd=1" uri="src/conf/xml-resources/web-service-references/registro/wsdl/localhost_8080/wsAutoSchool/registro.xsd_1.xsd"/>
+    <system systemId="http://localhost:8080/wsAutoSchool/administrador?wsdl" uri="src/conf/xml-resources/web-service-references/administrador/wsdl/localhost_8080/wsAutoSchool/administrador.wsdl"/>
+    <system systemId="http://localhost:8080/wsAutoSchool/administrador?xsd=1" uri="src/conf/xml-resources/web-service-references/administrador/wsdl/localhost_8080/wsAutoSchool/administrador.xsd_1.xsd"/>
+    <system systemId="http://localhost:8080/wsAutoSchool/datosProfesor?wsdl" uri="src/conf/xml-resources/web-service-references/datosProfesor/wsdl/localhost_8080/wsAutoSchool/datosProfesor.wsdl"/>
+    <system systemId="http://localhost:8080/wsAutoSchool/datosProfesor?xsd=1" uri="src/conf/xml-resources/web-service-references/datosProfesor/wsdl/localhost_8080/wsAutoSchool/datosProfesor.xsd_1.xsd"/>
+    <system systemId="http://localhost:8080/wsAutoSchool/acceso?wsdl" uri="src/conf/xml-resources/web-service-references/acceso/wsdl/localhost_8080/wsAutoSchool/acceso.wsdl"/>
+    <system systemId="http://localhost:8080/wsAutoSchool/acceso?xsd=1" uri="src/conf/xml-resources/web-service-references/acceso/wsdl/localhost_8080/wsAutoSchool/acceso.xsd_1.xsd"/>
+</catalog>
