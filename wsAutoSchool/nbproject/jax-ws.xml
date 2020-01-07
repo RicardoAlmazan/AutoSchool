@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jax-ws xmlns="http://www.netbeans.org/ns/jax-ws/1">
+  <services>
+    <service name="acceso">
+      <implementation-class>acceso.acceso</implementation-class>
+    </service>
+    <service name="registro">
+      <implementation-class>acceso.registro</implementation-class>
+    </service>
+    <service name="datosProfesor">
+      <implementation-class>profesor.datosProfesor</implementation-class>
+    </service>
+    <service name="administrador">
+      <implementation-class>administrador.administrador</implementation-class>
+    </service>
+    <service name="WSEquipos">
+      <implementation-class>WSEquipos.WSEquipos</implementation-class>
+    </service>
+  </services>
+  <clients/>
+</jax-ws>

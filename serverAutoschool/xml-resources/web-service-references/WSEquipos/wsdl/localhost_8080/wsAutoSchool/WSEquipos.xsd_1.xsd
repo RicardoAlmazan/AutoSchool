@@ -1,0 +1,49 @@
+<?xml version='1.0' encoding='UTF-8'?><!-- Published by JAX-WS RI (http://jax-ws.java.net). RI's version is Metro/2.3.2-b608 (trunk-7979; 2015-01-21T12:50:19+0000) JAXWS-RI/2.2.11-b150120.1832 JAXWS-API/2.2.12 JAXB-RI/2.2.12-b141219.1637 JAXB-API/2.2.13-b141020.1521 svn-revision#unknown. --><xs:schema xmlns:tns="http://WSEquipos/" xmlns:xs="http://www.w3.org/2001/XMLSchema" version="1.0" targetNamespace="http://WSEquipos/">
+
+<xs:element name="consultaEquipos" type="tns:consultaEquipos"/>
+
+<xs:element name="consultaEquiposResponse" type="tns:consultaEquiposResponse"/>
+
+<xs:element name="ejecutar" type="tns:ejecutar"/>
+
+<xs:element name="ejecutarResponse" type="tns:ejecutarResponse"/>
+
+<xs:element name="prendeApaga" type="tns:prendeApaga"/>
+
+<xs:element name="prendeApagaResponse" type="tns:prendeApagaResponse"/>
+
+<xs:complexType name="ejecutar">
+<xs:sequence>
+<xs:element name="name" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="ejecutarResponse">
+<xs:sequence>
+<xs:element name="return" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="consultaEquipos">
+<xs:sequence/>
+</xs:complexType>
+
+<xs:complexType name="consultaEquiposResponse">
+<xs:sequence>
+<xs:element name="return" type="xs:string" nillable="true" minOccurs="0" maxOccurs="unbounded"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="prendeApaga">
+<xs:sequence>
+<xs:element name="status" type="xs:int"/>
+<xs:element name="posi" type="xs:int"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="prendeApagaResponse">
+<xs:sequence>
+<xs:element name="return" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+</xs:schema>

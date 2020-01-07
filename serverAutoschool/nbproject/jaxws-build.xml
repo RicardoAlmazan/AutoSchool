@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?><!--
+        *** GENERATED FROM jax-ws.xml - DO NOT EDIT !                             ***
+        *** TO MODIFY wsimport options USE Web Service node -> Edit WS Attributes ***
+        *** TO CHANGE TARGETS GENERATED TO jaxws-build.xml COPY THOSE             ***
+        *** TARGETS TO ../build.xml AND MODIFY THAT FILE INSTEAD                  ***
+
+        --><project xmlns:xalan="http://xml.apache.org/xslt" xmlns:j2seproject3="http://www.netbeans.org/ns/j2se-project/3" xmlns:jaxws="http://www.netbeans.org/ns/jax-ws/1">
+    <!--
+                ===================
+                JAX-WS WSIMPORT SECTION
+                ===================
+            -->
+    <target name="wsimport-init" depends="init">
+        <mkdir dir="${build.generated.sources.dir}/jax-ws"/>
+        <taskdef name="wsimport" classname="com.sun.tools.ws.ant.WsImport">
+            <classpath path="${libs.jaxws21.classpath}"/>
+        </taskdef>
+    </target>
+    <target name="wsimport-client-acceso" depends="wsimport-init">
+        <mkdir dir="${build.generated.dir}/jax-wsCache/acceso"/>
+        <property name="wsdl-acceso" location="xml-resources/web-service-references/acceso/wsdl/localhost_8080/wsAutoSchool/acceso.wsdl"/>
+        <wsimport sourcedestdir="${build.generated.dir}/jax-wsCache/acceso" destdir="${build.generated.dir}/jax-wsCache/acceso" wsdl="${wsdl-acceso}" catalog="catalog.xml" encoding="${source.encoding}" extension="true" verbose="true" fork="false" wsdlLocation="http://localhost:8080/wsAutoSchool/acceso?wsdl" xnocompile="true" xendorsed="true">
+            <depends file="${wsdl-acceso}"/>
+            <produces dir="${build.generated.dir}/jax-wsCache/acceso"/>
+        </wsimport>
+        <copy todir="${build.generated.sources.dir}/jax-ws">
+            <fileset dir="${build.generated.dir}/jax-wsCache/acceso">
+                <include name="**/*.java"/>
+            </fileset>
+        </copy>
+    </target>
+    <target name="wsimport-client-clean-acceso" depends="-init-project">
+        <delete dir="${build.generated.dir}/jax-wsCache/acceso"/>
+        <delete dir="${build.generated.sources.dir}/jax-ws/acceso"/>
+    </target>
+    <target name="wsimport-client-WSEquipos" depends="wsimport-init">
+        <mkdir dir="${build.generated.dir}/jax-wsCache/WSEquipos"/>
+        <property name="wsdl-WSEquipos" location="xml-resources/web-service-references/WSEquipos/wsdl/localhost_8080/wsAutoSchool/WSEquipos.wsdl"/>
+        <wsimport sourcedestdir="${build.generated.dir}/jax-wsCache/WSEquipos" destdir="${build.generated.dir}/jax-wsCache/WSEquipos" wsdl="${wsdl-WSEquipos}" catalog="catalog.xml" encoding="${source.encoding}" extension="true" verbose="true" fork="false" wsdlLocation="http://localhost:8080/wsAutoSchool/WSEquipos?wsdl" xnocompile="true" xendorsed="true">
+            <depends file="${wsdl-WSEquipos}"/>
+            <produces dir="${build.generated.dir}/jax-wsCache/WSEquipos"/>
+        </wsimport>
+        <copy todir="${build.generated.sources.dir}/jax-ws">
+            <fileset dir="${build.generated.dir}/jax-wsCache/WSEquipos">
+                <include name="**/*.java"/>
+            </fileset>
+        </copy>
+    </target>
+    <target name="wsimport-client-clean-WSEquipos" depends="-init-project">
+        <delete dir="${build.generated.dir}/jax-wsCache/WSEquipos"/>
+        <delete dir="${build.generated.sources.dir}/jax-ws/wsequipos"/>
+    </target>
+    <target name="wsimport-client-datosProfesor" depends="wsimport-init">
+        <mkdir dir="${build.generated.dir}/jax-wsCache/datosProfesor"/>
+        <property name="wsdl-datosProfesor" location="xml-resources/web-service-references/datosProfesor/wsdl/localhost_8080/wsAutoSchool/datosProfesor.wsdl"/>
+        <wsimport sourcedestdir="${build.generated.dir}/jax-wsCache/datosProfesor" destdir="${build.generated.dir}/jax-wsCache/datosProfesor" wsdl="${wsdl-datosProfesor}" catalog="catalog.xml" encoding="${source.encoding}" extension="true" verbose="true" fork="false" wsdlLocation="http://localhost:8080/wsAutoSchool/datosProfesor?wsdl" xnocompile="true" xendorsed="true">
+            <depends file="${wsdl-datosProfesor}"/>
+            <produces dir="${build.generated.dir}/jax-wsCache/datosProfesor"/>
+        </wsimport>
+        <copy todir="${build.generated.sources.dir}/jax-ws">
+            <fileset dir="${build.generated.dir}/jax-wsCache/datosProfesor">
+                <include name="**/*.java"/>
+            </fileset>
+        </copy>
+    </target>
+    <target name="wsimport-client-clean-datosProfesor" depends="-init-project">
+        <delete dir="${build.generated.dir}/jax-wsCache/datosProfesor"/>
+        <delete dir="${build.generated.sources.dir}/jax-ws/profesor"/>
+    </target>
+    <target name="wsimport-client-generate" depends="wsimport-client-acceso, wsimport-client-WSEquipos, wsimport-client-datosProfesor"/>
+</project>
